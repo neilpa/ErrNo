@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8531EE21ABE1C8C00C0A8A1 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */; };
 		D86D5E711ABD41EC00CA574D /* ErrNo.h in Headers */ = {isa = PBXBuildFile; fileRef = D86D5E701ABD41EC00CA574D /* ErrNo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D86D5E7C1ABD41EC00CA574D /* ErrNo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D5E6B1ABD41EC00CA574D /* ErrNo.framework */; };
 		D86D5E831ABD41EC00CA574D /* ErrNoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D5E821ABD41EC00CA574D /* ErrNoTests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LlamaKit.framework; sourceTree = "<group>"; };
 		D86D5E6B1ABD41EC00CA574D /* ErrNo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ErrNo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D5E6F1ABD41EC00CA574D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D86D5E701ABD41EC00CA574D /* ErrNo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrNo.h; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8531EE21ABE1C8C00C0A8A1 /* LlamaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8531EE01ABE1C8C00C0A8A1 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */,
+			);
+			name = External;
+			path = Carthage/Build/Mac;
+			sourceTree = "<group>";
+		};
 		D86D5E611ABD41EC00CA574D = {
 			isa = PBXGroup;
 			children = (
 				D86D5E6D1ABD41EC00CA574D /* ErrNo */,
 				D86D5E7F1ABD41EC00CA574D /* ErrNoTests */,
 				D86D5E6C1ABD41EC00CA574D /* Products */,
+				D8531EE01ABE1C8C00C0A8A1 /* External */,
 			);
 			sourceTree = "<group>";
 		};
@@ -328,6 +341,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ErrNo/Info.plist;
 				INSTALL_PATH = "@rpath";
@@ -347,6 +364,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ErrNo/Info.plist;
 				INSTALL_PATH = "@rpath";
