@@ -258,7 +258,15 @@ public enum ErrNo : Int32 {
     //case ELAST    = 106
 }
 
-extension ErrNo {
+// MARK: Printable
+
+extension ErrNo : Printable {
+
+    /// Returns the error message and code.
+    public var description: String {
+        return "\(message) (\(rawValue))"
+    }
+
     /// Lookup error message specific to `ErrNo`.
     public var message: String {
         switch self {
