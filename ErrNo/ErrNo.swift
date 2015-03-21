@@ -159,6 +159,8 @@ public enum ErrNo : Int32 {
     case EPROCLIM   = 67
     /// Too many users
     case EUSERS     = 68
+    /// Disc quota exceeded
+    case EDQUOT     = 69
 
     // MARK: Network File System
 
