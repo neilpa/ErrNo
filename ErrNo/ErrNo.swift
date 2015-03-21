@@ -4,6 +4,13 @@ import Darwin.C.errno
 
 /// Wrapper around errno values from the C standard library.
 public enum ErrNo : errno_t {
+    // MARK: Operations
+
+    /// Wraps the `last` error.
+    public static var last: ErrNo? {
+        return self(rawValue: errno)
+    }
+
     // MARK: Basic
 
     /// Operation not permitted
