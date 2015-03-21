@@ -1,6 +1,12 @@
 //  Copyright (c) 2015 Neil Pankey. All rights reserved.
 
 import Darwin.C.errno
+import LlamaKit
+
+/// Checks `returnCode` and wraps it in a `Result`. Returns a `failure` if < 0, an empty `success` otherwise.
+public func try(returnCode: Int32) -> Result<(),ErrNo> {
+    return returnCode < 0 ? failure(ErrNo.last!) : success(())
+}
 
 /// Wrapper around errno values from the C standard library.
 public enum ErrNo : errno_t {
