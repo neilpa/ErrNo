@@ -1,7 +1,9 @@
 //  Copyright (c) 2015 Neil Pankey. All rights reserved.
 
+import Darwin.C.errno
+
 /// Wrapper around errno values from the C standard library.
-public enum ErrNo : Int32 {
+public enum ErrNo : errno_t {
     // MARK: Basic
 
     /// Operation not permitted
