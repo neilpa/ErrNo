@@ -1,1 +1,4 @@
-github "LlamaKit/LlamaKit" "v0.6.0"
+github "robrix/Box" "18d05a56845837eea90a36854c67de2520983bf8"
+github "robrix/Prelude" "180e9ae5e60ec47abd8f3e0fa68cafbbbd160abe"
+github "neilpa/Either" "eed070181a779f3eb86568b85953a4c558f8c843"
+github "antitypical/Result" "7710ed780bb208f560c134ad1252592ad15b7d08"

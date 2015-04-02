@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D8531EE21ABE1C8C00C0A8A1 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */; };
 		D8531EE41ABE24A600C0A8A1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8531EE31ABE24A600C0A8A1 /* Result.swift */; };
 		D86D5E711ABD41EC00CA574D /* ErrNo.h in Headers */ = {isa = PBXBuildFile; fileRef = D86D5E701ABD41EC00CA574D /* ErrNo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D86D5E7C1ABD41EC00CA574D /* ErrNo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86D5E6B1ABD41EC00CA574D /* ErrNo.framework */; };
 		D86D5E831ABD41EC00CA574D /* ErrNoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D5E821ABD41EC00CA574D /* ErrNoTests.swift */; };
 		D86D5E8D1ABD424100CA574D /* ErrNo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D5E8C1ABD424100CA574D /* ErrNo.swift */; };
+		D8D803061ACCF49C001C0677 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D803021ACCF49C001C0677 /* Box.framework */; };
+		D8D803071ACCF49C001C0677 /* Either.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D803031ACCF49C001C0677 /* Either.framework */; };
+		D8D803081ACCF49C001C0677 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D803041ACCF49C001C0677 /* Prelude.framework */; };
+		D8D803091ACCF49C001C0677 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D803051ACCF49C001C0677 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LlamaKit.framework; sourceTree = "<group>"; };
 		D8531EE31ABE24A600C0A8A1 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D86D5E6B1ABD41EC00CA574D /* ErrNo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ErrNo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D5E6F1ABD41EC00CA574D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +37,10 @@
 		D86D5E811ABD41EC00CA574D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D86D5E821ABD41EC00CA574D /* ErrNoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrNoTests.swift; sourceTree = "<group>"; };
 		D86D5E8C1ABD424100CA574D /* ErrNo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrNo.swift; sourceTree = "<group>"; };
+		D8D803021ACCF49C001C0677 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
+		D8D803031ACCF49C001C0677 /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Either.framework; sourceTree = "<group>"; };
+		D8D803041ACCF49C001C0677 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Prelude.framework; sourceTree = "<group>"; };
+		D8D803051ACCF49C001C0677 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8531EE21ABE1C8C00C0A8A1 /* LlamaKit.framework in Frameworks */,
+				D8D803061ACCF49C001C0677 /* Box.framework in Frameworks */,
+				D8D803071ACCF49C001C0677 /* Either.framework in Frameworks */,
+				D8D803081ACCF49C001C0677 /* Prelude.framework in Frameworks */,
+				D8D803091ACCF49C001C0677 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +69,10 @@
 		D8531EE01ABE1C8C00C0A8A1 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				D8531EE11ABE1C8C00C0A8A1 /* LlamaKit.framework */,
+				D8D803021ACCF49C001C0677 /* Box.framework */,
+				D8D803031ACCF49C001C0677 /* Either.framework */,
+				D8D803041ACCF49C001C0677 /* Prelude.framework */,
+				D8D803051ACCF49C001C0677 /* Result.framework */,
 			);
 			name = External;
 			path = Carthage/Build/Mac;
@@ -348,6 +360,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					/Users/neilpa/code/contrib/Result/Carthage/Build/Mac,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ErrNo/Info.plist;
@@ -371,6 +384,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					/Users/neilpa/code/contrib/Result/Carthage/Build/Mac,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ErrNo/Info.plist;
