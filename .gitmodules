@@ -4,6 +4,6 @@
 [submodule "Carthage/Checkouts/Prelude"]
 	url = https://github.com/robrix/Prelude.git
 [submodule "Carthage/Checkouts/Either"]
-	url = https://github.com/neilpa/Either.git
+	url = https://github.com/robrix/Either.git
 [submodule "Carthage/Checkouts/Result"]
 	url = https://github.com/antitypical/Result.git
