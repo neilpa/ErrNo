@@ -8,7 +8,7 @@ public func lastError() -> ErrNo? {
 }
 
 /// Wrapper around errno values from the C standard library.
-public enum ErrNo : errno_t {
+public enum ErrNo : errno_t, Error {
     // MARK: Basic
     /// Operation not permitted
     case EPERM      = 1
